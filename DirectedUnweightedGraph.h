@@ -10,14 +10,14 @@ struct Edge
 {
 	int source;
 	int destination;
-	int weight;
+	string weight;
 };
 
 class UndirectedweightedGraph
 {
 private:
 	int numberOfVertices;
-	vector<vector<pair<int, int>>> adjacencyList;
+	vector<vector<string>> adjacencyList;
 	//void DFSRec(int vertex, vector<bool>& visited);
 public:
 	UndirectedweightedGraph(int size);
